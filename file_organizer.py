@@ -228,7 +228,7 @@ def undo_last_action(folder_path):
 
 def main():
     parser = argparse.ArgumentParser(description="Smart File Organizer: Categorize your files automatically.")
-    parser.add_argument("folder_path", type=str, help="The path to the folder you want to organize.")
+    parser.add_argument("folder_path", type=str, nargs="?", default=".", help="The path to the folder you want to organize (defaults to current directory).")
     parser.add_argument("--undo", action="store_true", help="Undo the file organization in the specified folder.")
     
     args = parser.parse_args()
@@ -237,6 +237,10 @@ def main():
         undo_last_action(args.folder_path)
     else:
         organize_directory(args.folder_path)
+
+    # If running on Windows, prevent the terminal from instantly closing when double-clicking the file
+    if os.name == 'nt':
+        input("\nPress Enter to exit...")
 
 if __name__ == "__main__":
     main()
