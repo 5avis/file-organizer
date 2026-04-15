@@ -1,0 +1,9 @@
+2026-04-15 23:25:52 - INFO - Starting organization of: /home/siva/Documents/file organiser/test_dir
+2026-04-15 23:25:52 - INFO - Moved: 'vid.mp4' -> 'Videos/vid.mp4'
+2026-04-15 23:25:52 - INFO - Moved: 'unknown.xyz' -> 'Others/unknown.xyz'
+2026-04-15 23:25:52 - INFO - Moved: 'img2.jpg' -> 'Images/img2.jpg'
+2026-04-15 23:25:52 - INFO - Moved: 'doc1.pdf' -> 'Documents/doc1.pdf'
+2026-04-15 23:25:52 - INFO - Moved: 'script.py' -> 'Code/script.py'
+2026-04-15 23:25:52 - INFO - Moved: 'img1.png' -> 'Images/img1.png'
+2026-04-15 23:25:52 - INFO - Undo history saved to undo_history.json
+2026-04-15 23:25:52 - INFO - Organization complete! Successfully moved 6 files.
